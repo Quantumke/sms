@@ -5,7 +5,15 @@
  */
 package sms;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import java.sql.DriverManager;
 
 /**
  *
@@ -35,6 +43,7 @@ public void DoConnect(){}
         txtusername = new javax.swing.JTextField();
         txtpassword = new javax.swing.JPasswordField();
         cmdOk = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,6 +57,8 @@ public void DoConnect(){}
                 cmdOkActionPerformed(evt);
             }
         });
+
+        jLabel3.setText("PASSWORD");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,7 +78,10 @@ public void DoConnect(){}
                             .addComponent(txtpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(146, 146, 146)
-                        .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addComponent(jLabel3)))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -79,7 +93,9 @@ public void DoConnect(){}
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtusername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addGap(9, 9, 9)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(cmdOk)
@@ -105,7 +121,52 @@ public void DoConnect(){}
         }
         if(password.isEmpty()==true){
             JOptionPane.showMessageDialog(null, "Password Cant Be Blank");
+            return;
         }
+        
+        try{
+            Connection con;
+            Connection connection=null;
+            Statement stmt=null;
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sms","root","master12!");
+            String login;
+            login="Select * from admin where username=? and password=?";
+            PreparedStatement pst =connection.prepareStatement(login);
+            pst.setString(1, username);
+            pst.setString(2, password);
+            ResultSet rs;
+            rs=pst.executeQuery();
+            if(rs.next())
+            {
+                dbconnect.strUser=txtusername.getText();
+                String role;
+                role="Select role from admin";
+                if(role== "physics"){
+                home m = new home();
+                m.setVisible(true);
+                this.setVisible(false);
+            }
+                else
+                {
+                    
+                    math x = new math();
+                x.setVisible(true);
+                this.setVisible(false);
+                    
+                }
+                
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null, "Incorrect login Details");
+            }
+            
+        } catch (Exception e) {
+        System.err.println(e);
+    }
+        
+        
         
     }//GEN-LAST:event_cmdOkActionPerformed
 
@@ -148,6 +209,7 @@ public void DoConnect(){}
     private javax.swing.JButton cmdOk;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField txtpassword;
     private javax.swing.JTextField txtusername;
     // End of variables declaration//GEN-END:variables
