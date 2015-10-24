@@ -140,23 +140,14 @@ public void DoConnect(){}
             if(rs.next())
             {
                 dbconnect.strUser=txtusername.getText();
-                String role;
-                role="Select role from admin";
-                if(role== "physics"){
+                
                 home m = new home();
                 m.setVisible(true);
                 this.setVisible(false);
             }
-                else
-                {
-                    
-                    math x = new math();
-                x.setVisible(true);
-                this.setVisible(false);
-                    
-                }
+        
                 
-            }
+            
             else
             {
                 JOptionPane.showMessageDialog(null, "Incorrect login Details");
