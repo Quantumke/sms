@@ -32,9 +32,9 @@ public class home extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
-        jMenu11 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        F1T1C1 = new javax.swing.JMenuItem();
+        F1C2F1 = new javax.swing.JMenuItem();
+        F1T1ET = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -60,14 +60,29 @@ public class home extends javax.swing.JFrame {
 
         jMenu10.setText("First Term");
 
-        jMenu11.setText("CAT 1");
-        jMenu10.add(jMenu11);
+        F1T1C1.setText("CAT 1");
+        F1T1C1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F1T1C1ActionPerformed(evt);
+            }
+        });
+        jMenu10.add(F1T1C1);
 
-        jMenuItem4.setText("CAT 2");
-        jMenu10.add(jMenuItem4);
+        F1C2F1.setText("CAT 2");
+        F1C2F1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F1C2F1ActionPerformed(evt);
+            }
+        });
+        jMenu10.add(F1C2F1);
 
-        jMenuItem3.setText("End Term");
-        jMenu10.add(jMenuItem3);
+        F1T1ET.setText("End Term");
+        F1T1ET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F1T1ETActionPerformed(evt);
+            }
+        });
+        jMenu10.add(F1T1ET);
 
         jMenu5.add(jMenu10);
 
@@ -137,6 +152,28 @@ public class home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void F1T1C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F1T1C1ActionPerformed
+        // TODO add your handling code here:
+        
+        F1T1C1 a = new F1T1C1();
+        a.setVisible(true);
+       
+        
+    }//GEN-LAST:event_F1T1C1ActionPerformed
+
+    private void F1C2F1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F1C2F1ActionPerformed
+        // TODO add your handling code here:
+        F1T1C2 b = new F1T1C2();
+        b.setVisible(true);
+    }//GEN-LAST:event_F1C2F1ActionPerformed
+
+    private void F1T1ETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F1T1ETActionPerformed
+        // TODO add your handling code here:
+        
+        F1T1ET c = new F1T1ET();
+        c.setVisible(true);
+    }//GEN-LAST:event_F1T1ETActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -173,9 +210,11 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem F1C2F1;
+    private javax.swing.JMenuItem F1T1C1;
+    private javax.swing.JMenuItem F1T1ET;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
-    private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu14;
@@ -190,8 +229,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
