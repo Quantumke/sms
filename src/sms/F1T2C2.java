@@ -65,7 +65,7 @@ public class F1T2C2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("FORM 1 FIRST TERM CAT 1 MARKS");
+        jLabel1.setText("FORM 1 SECOND TERM CAT 1 MARKS");
 
         jLabel2.setText("Maths");
 

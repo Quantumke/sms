@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
  *
  * @author benson
  */
-public class FIT2ET extends javax.swing.JFrame {
+public class F1T3C1 extends javax.swing.JFrame {
 
     /**
      * Creates new form F1T1C1
      */
-    public FIT2ET() {
+    public F1T3C1() {
         initComponents();
     }
 
@@ -61,13 +61,15 @@ public class FIT2ET extends javax.swing.JFrame {
         cmdOk = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         txtbusiness = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        cmdExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("FORM 1 SECOND TERM CAT 1 MARKS");
+        jLabel1.setText("FORM 1 THIRD TERM CAT 1 MARKS");
 
         jLabel2.setText("Maths");
+
+        txtmaths.setToolTipText("maths score out of 30");
 
         jLabel3.setText("English");
 
@@ -89,7 +91,7 @@ public class FIT2ET extends javax.swing.JFrame {
 
         jLabel12.setText("Agriculture");
 
-        cmdOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/ic_save.png"))); // NOI18N
+        cmdOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/img/ic_save.png"))); // NOI18N
         cmdOk.setText("Submit");
         cmdOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,11 +101,11 @@ public class FIT2ET extends javax.swing.JFrame {
 
         jLabel13.setText("Business");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/ic_home_black_18dp.png"))); // NOI18N
-        jButton1.setText("Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cmdExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/img/ic_home_black_18dp.png"))); // NOI18N
+        cmdExit.setText("Exit");
+        cmdExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cmdExitActionPerformed(evt);
             }
         });
 
@@ -124,37 +126,35 @@ public class FIT2ET extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(jLabel13)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(txtbusiness))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(jLabel4)
+                                    .addGap(33, 33, 33)
+                                    .addComponent(txtswahili, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel3)
+                                        .addComponent(jLabel2))
+                                    .addGap(32, 32, 32)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtenglish, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+                                        .addComponent(txtmaths)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel5)
+                                        .addComponent(jLabel11))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtcre)
+                                        .addComponent(txtgeo))))
+                            .addComponent(cmdExit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                                .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel13)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txtbusiness))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(33, 33, 33)
-                                        .addComponent(txtswahili, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel2))
-                                        .addGap(32, 32, 32)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtenglish, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                                            .addComponent(txtmaths)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel5)
-                                            .addComponent(jLabel11))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtcre)
-                                            .addComponent(txtgeo))))
                                 .addGap(35, 35, 35)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7)
@@ -169,7 +169,10 @@ public class FIT2ET extends javax.swing.JFrame {
                                     .addComponent(txthistory)
                                     .addComponent(txtchemistry)
                                     .addComponent(txtbiology)
-                                    .addComponent(txtphysics))))))
+                                    .addComponent(txtphysics)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -215,9 +218,9 @@ public class FIT2ET extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
                     .addComponent(txtbusiness, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(cmdExit)
                     .addComponent(cmdOk))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -246,21 +249,24 @@ public class FIT2ET extends javax.swing.JFrame {
            String history =txthistory.getText();
            String geo=txtgeo.getText();
          
-           
-             if (id.isEmpty()){
-                 JOptionPane.showMessageDialog(null, "Student Id is Required");
-                 return;
-             }        
+                   
              if(maths.length() >2){
             JOptionPane.showMessageDialog(null,"Too large");
             return;
         }
+             if (id.isEmpty()){
+                 JOptionPane.showMessageDialog(null, "Student Id is Required");
+                 return;
+             }
 //       String sql =("Insert into F1T1C1 (id,maths,english,swahili,physics,chemistry,biology,agri,cre,business,history,geo) VALUES('"+stdid.getText()+"','"+txtmaths.getText()+"',);");
 //      
            
- String sql =("Insert into FIT2ET (id,maths,english,swahili,physics,chemistry,biology,agri,cre,business,history,geo) VALUES('"+stdid.getText()+"','"+txtmaths.getText()+"',   '"+txtenglish.getText()+"', '"+txtswahili.getText()+"','"+txtphysics.getText()+"','"+txtchemistry.getText()+"','"+txtbiology.getText()+"', '"+txtagri.getText()+"','"+txtcre.getText()+"','"+txtbusiness.getText()+"','"+txthistory.getText()+"','"+txtgeo.getText()+"'   );");
+ String sql =("Insert into F1T3C1 (id,maths,english,swahili,physics,chemistry,biology,agri,cre,business,history,geo) VALUES('"+stdid.getText()+"','"+txtmaths.getText()+"',   '"+txtenglish.getText()+"', '"+txtswahili.getText()+"','"+txtphysics.getText()+"','"+txtchemistry.getText()+"','"+txtbiology.getText()+"', '"+txtagri.getText()+"','"+txtcre.getText()+"','"+txtbusiness.getText()+"','"+txthistory.getText()+"','"+txtgeo.getText()+"'   );");
       stmt.executeUpdate(sql);
       JOptionPane.showMessageDialog(null, "successfull");
+     F1T3C1 b = new F1T3C1();
+     b.setVisible(true);
+     
            
            
         } 
@@ -270,12 +276,13 @@ public class FIT2ET extends javax.swing.JFrame {
       
     }//GEN-LAST:event_cmdOkActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void cmdExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdExitActionPerformed
+        // TODO add your handling code here
+        
         home a = new home();
         a.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_cmdExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -294,34 +301,28 @@ public class FIT2ET extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FIT2ET.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F1T3C1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FIT2ET.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F1T3C1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FIT2ET.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F1T3C1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FIT2ET.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(F1T3C1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FIT2ET().setVisible(true);
+                new F1T3C1().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdExit;
     private javax.swing.JButton cmdOk;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

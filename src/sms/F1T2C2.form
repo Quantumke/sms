@@ -173,7 +173,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="FORM 1 FIRST TERM CAT 1 MARKS"/>
+        <Property name="text" type="java.lang.String" value="FORM 1 SECOND TERM CAT 1 MARKS"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="stdid">
