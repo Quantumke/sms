@@ -67,6 +67,7 @@ public class F1T1C1 extends javax.swing.JFrame {
         cmdExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFont(new java.awt.Font("Purisa", 0, 12)); // NOI18N
         setIconImage(Toolkit.getDefaultToolkit().getImage(F1T1C1.class.getResource("ic_school_black_24dp.png")));
 
         jLabel1.setText("FORM 1 FIRST TERM CAT 1 MARKS");
@@ -95,8 +96,10 @@ public class F1T1C1 extends javax.swing.JFrame {
 
         jLabel12.setText("Agriculture");
 
+        cmdOk.setFont(new java.awt.Font("Purisa", 0, 14)); // NOI18N
         cmdOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/img/ic_save.png"))); // NOI18N
         cmdOk.setText("Submit");
+        cmdOk.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(254, 247, 247)));
         cmdOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdOkActionPerformed(evt);
@@ -105,8 +108,11 @@ public class F1T1C1 extends javax.swing.JFrame {
 
         jLabel13.setText("Business");
 
+        cmdExit.setBackground(new java.awt.Color(44, 44, 44));
+        cmdExit.setFont(new java.awt.Font("Purisa", 0, 12)); // NOI18N
         cmdExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/img/ic_home_black_18dp.png"))); // NOI18N
         cmdExit.setText("Exit");
+        cmdExit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(254, 254, 254)));
         cmdExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdExitActionPerformed(evt);

@@ -5,6 +5,7 @@
  */
 package sms;
 
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -46,12 +47,18 @@ public void DoConnect(){}
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(index.class.getResource("ic_school_black_24dp.png")));
 
         jLabel1.setText("WELCOME");
 
         jLabel2.setText("USER NAME");
 
+        cmdOk.setBackground(new java.awt.Color(44, 44, 44));
+        cmdOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/ic_arrow_forward.png"))); // NOI18N
         cmdOk.setText("GO!");
+        cmdOk.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 245, 243)));
+        cmdOk.setContentAreaFilled(false);
+        cmdOk.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cmdOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdOkActionPerformed(evt);
@@ -99,7 +106,7 @@ public void DoConnect(){}
                 .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(cmdOk)
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         pack();

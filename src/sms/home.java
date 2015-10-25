@@ -5,6 +5,8 @@
  */
 package sms;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author benson
@@ -52,6 +54,7 @@ public class home extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(home.class.getResource("ic_school_black_24dp.png")));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/29.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -161,7 +164,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 480, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
