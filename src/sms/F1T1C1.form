@@ -181,6 +181,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtmaths">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="maths score out of 30"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>

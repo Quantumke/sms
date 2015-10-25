@@ -69,6 +69,8 @@ public class F1T1C1 extends javax.swing.JFrame {
 
         jLabel2.setText("Maths");
 
+        txtmaths.setToolTipText("maths score out of 30");
+
         jLabel3.setText("English");
 
         jLabel4.setText("Swahili");
@@ -252,12 +254,19 @@ public class F1T1C1 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Too large");
             return;
         }
+             if (id.isEmpty()){
+                 JOptionPane.showMessageDialog(null, "Student Id is Required");
+                 return;
+             }
 //       String sql =("Insert into F1T1C1 (id,maths,english,swahili,physics,chemistry,biology,agri,cre,business,history,geo) VALUES('"+stdid.getText()+"','"+txtmaths.getText()+"',);");
 //      
            
  String sql =("Insert into F1T1C1 (id,maths,english,swahili,physics,chemistry,biology,agri,cre,business,history,geo) VALUES('"+stdid.getText()+"','"+txtmaths.getText()+"',   '"+txtenglish.getText()+"', '"+txtswahili.getText()+"','"+txtphysics.getText()+"','"+txtchemistry.getText()+"','"+txtbiology.getText()+"', '"+txtagri.getText()+"','"+txtcre.getText()+"','"+txtbusiness.getText()+"','"+txthistory.getText()+"','"+txtgeo.getText()+"'   );");
       stmt.executeUpdate(sql);
       JOptionPane.showMessageDialog(null, "successfull");
+     F1T1C1 b = new F1T1C1();
+     b.setVisible(true);
+     
            
            
         } 
