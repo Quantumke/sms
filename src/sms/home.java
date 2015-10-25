@@ -46,7 +46,19 @@ public class home extends javax.swing.JFrame {
         jMenu13 = new javax.swing.JMenu();
         jMenu14 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        form2 = new javax.swing.JMenu();
+        jMenu12 = new javax.swing.JMenu();
+        F2T1C1 = new javax.swing.JMenuItem();
+        F2T1C2 = new javax.swing.JMenuItem();
+        F2T1ET = new javax.swing.JMenuItem();
+        jMenu11 = new javax.swing.JMenu();
+        F2T2C1 = new javax.swing.JMenuItem();
+        F2T2C2 = new javax.swing.JMenuItem();
+        F2T2ET = new javax.swing.JMenuItem();
+        jMenu15 = new javax.swing.JMenu();
+        F2T3C1 = new javax.swing.JMenuItem();
+        F2T3C2 = new javax.swing.JMenuItem();
+        F2T3ET = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
@@ -136,8 +148,93 @@ public class home extends javax.swing.JFrame {
 
         jMenu3.add(jMenu5);
 
-        jMenuItem1.setText("Form 2");
-        jMenu3.add(jMenuItem1);
+        form2.setText("Form 2");
+
+        jMenu12.setText("First Term");
+
+        F2T1C1.setText("CAT 1");
+        F2T1C1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T1C1ActionPerformed(evt);
+            }
+        });
+        jMenu12.add(F2T1C1);
+
+        F2T1C2.setText("CAT 2");
+        F2T1C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T1C2ActionPerformed(evt);
+            }
+        });
+        jMenu12.add(F2T1C2);
+
+        F2T1ET.setText("END TERM");
+        F2T1ET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T1ETActionPerformed(evt);
+            }
+        });
+        jMenu12.add(F2T1ET);
+
+        form2.add(jMenu12);
+
+        jMenu11.setText("Second Term");
+
+        F2T2C1.setText("CAT 1");
+        F2T2C1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T2C1ActionPerformed(evt);
+            }
+        });
+        jMenu11.add(F2T2C1);
+
+        F2T2C2.setText("CAT 2");
+        F2T2C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T2C2ActionPerformed(evt);
+            }
+        });
+        jMenu11.add(F2T2C2);
+
+        F2T2ET.setText("END TERM");
+        F2T2ET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T2ETActionPerformed(evt);
+            }
+        });
+        jMenu11.add(F2T2ET);
+
+        form2.add(jMenu11);
+
+        jMenu15.setText("Third Term");
+
+        F2T3C1.setText("CAT 1");
+        F2T3C1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T3C1ActionPerformed(evt);
+            }
+        });
+        jMenu15.add(F2T3C1);
+
+        F2T3C2.setText("CAT 2");
+        F2T3C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T3C2ActionPerformed(evt);
+            }
+        });
+        jMenu15.add(F2T3C2);
+
+        F2T3ET.setText("END TERM");
+        F2T3ET.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F2T3ETActionPerformed(evt);
+            }
+        });
+        jMenu15.add(F2T3ET);
+
+        form2.add(jMenu15);
+
+        jMenu3.add(form2);
 
         jMenu6.setText("Form 3");
         jMenu3.add(jMenu6);
@@ -216,6 +313,62 @@ public class home extends javax.swing.JFrame {
         d.setVisible(true);
     }//GEN-LAST:event_F1T2C1ActionPerformed
 
+    private void F2T1C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T1C2ActionPerformed
+        // TODO add your handling code here:
+         F2T1C2 b =  new  F2T1C2();
+         b.setVisible(true);
+    }//GEN-LAST:event_F2T1C2ActionPerformed
+
+    private void F2T2C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T2C1ActionPerformed
+        // TODO add your handling code here:
+        F2T2C1 d = new F2T2C1();
+        d.setVisible(true);
+    }//GEN-LAST:event_F2T2C1ActionPerformed
+
+    private void F2T3ETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T3ETActionPerformed
+        // TODO add your handling code here:
+        F2T3ET i = new F2T3ET();
+        i.setVisible(true);
+        
+    }//GEN-LAST:event_F2T3ETActionPerformed
+
+    private void F2T3C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T3C1ActionPerformed
+        // TODO add your handling code here:
+        F2T3C1 g = new F2T3C1();
+        g.setVisible(true);
+    }//GEN-LAST:event_F2T3C1ActionPerformed
+
+    private void F2T3C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T3C2ActionPerformed
+        // TODO add your handling code here:
+        F2T3C2 h = new F2T3C2();
+        h.setVisible(true);
+    }//GEN-LAST:event_F2T3C2ActionPerformed
+
+    private void F2T1C1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T1C1ActionPerformed
+        // TODO add your handling code here:
+        F2T1C1 a = new F2T1C1();
+        a.setVisible(true);
+    }//GEN-LAST:event_F2T1C1ActionPerformed
+
+    private void F2T1ETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T1ETActionPerformed
+        // TODO add your handling code here:
+         F2T1ET c = new  F2T1ET();
+         c.setVisible(true);
+    }//GEN-LAST:event_F2T1ETActionPerformed
+
+    private void F2T2C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T2C2ActionPerformed
+        // TODO add your handling code here:
+        F2T2C2  e = new F2T2C2();
+        e.setVisible(true);
+        
+    }//GEN-LAST:event_F2T2C2ActionPerformed
+
+    private void F2T2ETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F2T2ETActionPerformed
+        // TODO add your handling code here:
+         F2T2ET f = new  F2T2ET();
+         f.setVisible(true);
+    }//GEN-LAST:event_F2T2ETActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -258,11 +411,24 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenuItem F1T2C1;
     private javax.swing.JMenuItem F1T2C2;
     private javax.swing.JMenuItem F1T2ET;
+    private javax.swing.JMenuItem F2T1C1;
+    private javax.swing.JMenuItem F2T1C2;
+    private javax.swing.JMenuItem F2T1ET;
+    private javax.swing.JMenuItem F2T2C1;
+    private javax.swing.JMenuItem F2T2C2;
+    private javax.swing.JMenuItem F2T2ET;
+    private javax.swing.JMenuItem F2T3C1;
+    private javax.swing.JMenuItem F2T3C2;
+    private javax.swing.JMenuItem F2T3ET;
+    private javax.swing.JMenu form2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu14;
+    private javax.swing.JMenu jMenu15;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -272,7 +438,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem7;
     // End of variables declaration//GEN-END:variables

@@ -105,11 +105,106 @@
                     </Menu>
                   </SubComponents>
                 </Menu>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+                <Menu class="javax.swing.JMenu" name="form2">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Form 2"/>
                   </Properties>
-                </MenuItem>
+                  <SubComponents>
+                    <Menu class="javax.swing.JMenu" name="jMenu12">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="First Term"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T1C1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T1C1ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T1C2">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 2"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T1C2ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T1ET">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="END TERM"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T1ETActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="jMenu11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Second Term"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T2C1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T2C1ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T2C2">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 2"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T2C2ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T2ET">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="END TERM"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T2ETActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="jMenu15">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Third Term"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T3C1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T3C1ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T3C2">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="CAT 2"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T3C2ActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="F2T3ET">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="END TERM"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F2T3ETActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                  </SubComponents>
+                </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu6">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Form 3"/>
