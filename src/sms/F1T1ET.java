@@ -61,6 +61,7 @@ public class F1T1ET extends javax.swing.JFrame {
         cmdOk = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         txtbusiness = new javax.swing.JTextField();
+        cmdExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -88,6 +89,7 @@ public class F1T1ET extends javax.swing.JFrame {
 
         jLabel12.setText("Agriculture");
 
+        cmdOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/ic_save.png"))); // NOI18N
         cmdOk.setText("Submit");
         cmdOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,23 +99,26 @@ public class F1T1ET extends javax.swing.JFrame {
 
         jLabel13.setText("Business");
 
+        cmdExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sms/images/ic_home_black_18dp.png"))); // NOI18N
+        cmdExit.setText("Back");
+        cmdExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdExitActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 25, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59)
-                        .addComponent(stdid, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(93, 93, 93))))
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59)
+                .addComponent(stdid, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(108, 108, 108)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -158,7 +163,12 @@ public class F1T1ET extends javax.swing.JFrame {
                             .addComponent(txthistory)
                             .addComponent(txtchemistry)
                             .addComponent(txtbiology)
-                            .addComponent(txtphysics))))
+                            .addComponent(txtphysics)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(cmdExit, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                        .addComponent(cmdOk, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -205,7 +215,9 @@ public class F1T1ET extends javax.swing.JFrame {
                     .addComponent(jLabel13)
                     .addComponent(txtbusiness, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cmdOk)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmdOk)
+                    .addComponent(cmdExit))
                 .addContainerGap())
         );
 
@@ -233,7 +245,11 @@ public class F1T1ET extends javax.swing.JFrame {
            String history =txthistory.getText();
            String geo=txtgeo.getText();
          
-                   
+             
+             if (id.isEmpty()){
+                 JOptionPane.showMessageDialog(null, "Student Id is Required");
+                 return;
+             }      
              if(maths.length() >2){
             JOptionPane.showMessageDialog(null,"Too large");
             return;
@@ -252,6 +268,13 @@ public class F1T1ET extends javax.swing.JFrame {
         } 
       
     }//GEN-LAST:event_cmdOkActionPerformed
+
+    private void cmdExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdExitActionPerformed
+        // TODO add your handling code here:
+        home a = new home();
+        a.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_cmdExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,6 +313,7 @@ public class F1T1ET extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdExit;
     private javax.swing.JButton cmdOk;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
