@@ -5,6 +5,7 @@
  */
 package sms;
 
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -66,6 +67,7 @@ public class F1T1ET extends javax.swing.JFrame {
         cmdExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(Toolkit.getDefaultToolkit().getImage(F1T1ET.class.getResource("ic_school_black_24dp.png")));
 
         jLabel1.setText("FORM 1 END TERM 1 MARKS");
 
